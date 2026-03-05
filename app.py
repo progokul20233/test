@@ -33,7 +33,7 @@ def catch_data():
     stolen_data = request.args.get('data')
     if stolen_data:
         # This prints to your Render dashboard logs
-        print(f"!!! CRITICAL BOUNTY DATA: {stolen_data} !!!")
+        print(f"!!! CRITICAL USER DATA: {stolen_data} !!!")
     
     # Returning a message to the AI crawler
     return (
@@ -46,3 +46,4 @@ def catch_data():
 if __name__ == '__main__':
     # Standard configuration for Render deployment
     app.run(host='0.0.0.0', port=5000)
+
